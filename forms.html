@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form örnekleri</title>
+</head>
+<body>
+  
+  <form>
+    <!-- 
+    input - kısa metin alanı
+    textarea - uzun metin alanı
+    checkbox
+    radio - çoktan seçmeli alan (ama tek seçim)
+    select - dropdown yani açılır menü olarak seçim yapmaya yarıyor
+    button -> formu gönderir, sıfırlar, süs olarak durur
+    -->
+    <p>Ad: <input required type="text" name="ad" placeholder="ad"></p>
+    <p>Soyad: <input type="text" name="soyad" value="Ekici"></p>
+    <p>Şifre: <input type="password" name="sifre"></p>
+    <p>E-Posta Adresi: <input type="email" name="eposta"></p>
+    <p><input type="url"></p>
+    <p><input type="datetime-local"></p>
+    <p>
+      <label><input type="radio" name="cinsiyet" value="kadın"> kadın</label>
+      <label><input type="radio" name="cinsiyet" value="erkek"> erkek</label>
+      <label><input checked type="radio" name="cinsiyet" value="atak helikopteri"> atak helikopteri</label>
+    </p>
+    <p><label><input type="checkbox" name="onay"> onaylıyorum</label></p>
+    <p>
+      <select name="secim">
+        <option value="34">İstanbul</option>
+        <option value="06" selected>Ankara</option>
+        <option value="35">İzmir</option>
+      </select>
+    </p>
+    <p><textarea rows="3" placeholder="içerik nasıl olması gerektiğine dair veren bölüm"></textarea></p>
+    <!-- eğer form içinde tek buton varsa ve tip belirtilmemişse
+     o buton submit görevi görür -->
+    <button>yolla</button>
+  </form>
+
+</body>
+</html>
